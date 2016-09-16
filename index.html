@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Lulator, gerador de diagramas!</title>
+        <meta name="description" content="Lulator, your own lula diagram.">
+        <meta name="author" content="Luís Fernando Guedes <lfernandoguedes@gmail.com>">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body ng-app="lulatorApp">
+        <div ng-controller="lulaCtrl">
+
+            <div class="lulator">
+                <div class="lula" ng-click="editDiagram('principal')">
+                    {{lula.principal}}
+                </div>
+
+                <div class="lula1" ng-click="editDiagram('lula1')">
+                    {{lula.lula1}}
+                </div>
+
+                <div class="lula2" ng-click="editDiagram('lula2')">
+                    {{lula.lula2}}
+                </div>
+
+                <div class="lula3" ng-click="editDiagram('lula3')">
+                    {{lula.lula3}}
+                </div>
+
+                <div class="lula4" ng-click="editDiagram('lula4')">
+                    {{lula.lula4}}
+                </div>
+
+                <div class="lula5" ng-click="editDiagram('lula5')">
+                    {{lula.lula5}}
+                </div>
+
+                <div class="lula6" ng-click="editDiagram('lula6')">
+                    {{lula.lula6}}
+                </div>
+
+                <div class="lula7" ng-click="editDiagram('lula7')">
+                    {{lula.lula7}}
+                </div>
+
+                <div class="lula8" ng-click="editDiagram('lula8')">
+                    {{lula.lula8}}
+                </div>
+
+                <div class="lula9" ng-click="editDiagram('lula9')">
+                    {{lula.lula9}}
+                </div>
+
+                <div class="lula10" ng-click="editDiagram('lula10')">
+                    {{lula.lula10}}
+                </div>
+
+                <div class="lula11" ng-click="editDiagram('lula11')">
+                    {{lula.lula11}}
+                </div>
+
+                <div class="lula12" ng-click="editDiagram('lula12')">
+                    {{lula.lula12}}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <header>
+                        <div class="text-center">
+                            <h1>Lulator</h1>
+                        </div>
+                    </header>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row text-center">
+                    <input ng-model="textEdit" type="text"><button ng-click="setDiagram()">Mudar</button>
+                </div>
+                <div class="row text-center diagram">
+                    <img src="img/lula.svg">
+                </div>
+                <footer class="row">
+                    <div class="col-md-12 well">
+                        <p class="text-center">"Não tenho provas mas tenho convicção de que ficou uma bosta, faça bom uso."</p>
+                        <p class="text-center">Desenvolvido com ♥ por <a href="http://fernandogued.es" target="_blank">Luís Fernando Guedes</a></p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+
+        <script src="js/app.js"></script>
+        <script src="js/lulator.controller.js"></script>
+    </body>
+</html>
